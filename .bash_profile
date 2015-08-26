@@ -1,5 +1,5 @@
 # Get my current external IP address
-alias myip="echo $(ifconfig | grep inet | tail -1 | cut -d ' ' -f2):9000"
+alias myip="ifconfig | grep inet | tail -1 | cut -d ' ' -f2"
 
 # Django
 alias djr="python manage.py runserver"
